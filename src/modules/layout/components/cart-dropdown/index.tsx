@@ -11,6 +11,7 @@ import { formatAmount, useCart } from "medusa-react"
 import Link from "next/link"
 import { Fragment } from "react"
 import { CalculatedVariant } from "types/medusa"
+import { AiOutlineShopping } from "react-icons/ai"
 
 const CartDropdown = () => {
   const { cart, totalItems } = useCart()
@@ -22,7 +23,7 @@ const CartDropdown = () => {
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
         <Link href="/cart" passHref>
-          <Popover.Button className="h-full">{`My Bag (${totalItems})`}</Popover.Button>
+          <Popover.Button className="h-full py-5 flex text-xl"> <AiOutlineShopping /> &nbsp; <span className="text-sm">({totalItems})</span></Popover.Button>
         </Link>
         <Transition
           show={state}

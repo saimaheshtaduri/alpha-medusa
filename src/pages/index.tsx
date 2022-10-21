@@ -10,10 +10,9 @@ const Home: NextPageWithLayout = () => {
     <>
       <Head
         title="Home"
-        description="Shop all available models only at the ACME. Worldwide Shipping. Secure Payment."
+        description="Shop your Style, Best shopping experience - Secure Payments."
       />
       <Hero />
-      <FeaturedProducts />
     </>
   )
 }

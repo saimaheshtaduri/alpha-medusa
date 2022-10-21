@@ -8,6 +8,8 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { AiOutlineUser } from "react-icons/ai";
+
 
 const Nav = () => {
   const { pathname } = useRouter()
@@ -61,7 +63,13 @@ const Nav = () => {
             }
           )}
         >
-          <div className="flex-1 basis-0 h-full flex items-center">
+          <div className="flex items-center h-full">
+            <Link href="/">
+              <a className="text-xl-semi font-montserrat">alpha </a>
+            </Link>
+          </div>
+
+          <div className="flex-1 basis-0 h-full flex items-center float-right">
             <div className="block small:hidden">
               <Hamburger setOpen={toggle} />
             </div>
@@ -70,17 +78,11 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
-            <Link href="/">
-              <a className="text-xl-semi uppercase">Acme</a>
-            </Link>
-          </div>
-
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
               <Link href="/account">
-                <a>Account</a>
+                <a className="text-xl"><AiOutlineUser /></a>
               </Link>
             </div>
             <CartDropdown />

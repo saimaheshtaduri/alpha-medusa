@@ -33,6 +33,12 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
+        roboto: ["Roboto Flex", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
+        abril: ["Abril Fatface", "sans-serif"],
+        dela: ["Dela Gothic One", "sans-serif"]
       },
     },
   },

@@ -11,7 +11,7 @@ An e commerce web store using Nextjs + Medusajs
 
 ### Preview
 
-![Demo](https://user-images.githubusercontent.com/53844369/197283633-85511ba1-5e3a-4e6d-922e-324ed1b5c5fd.mp4)
+https://user-images.githubusercontent.com/53844369/197283633-85511ba1-5e3a-4e6d-922e-324ed1b5c5fd.mp4
 
 
 ## Set up Project
